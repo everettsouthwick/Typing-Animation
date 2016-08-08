@@ -1,8 +1,3 @@
-//-----=[DO NOT TOUCH THESE VARIABLES]=-----
-var captionLength = 0;
-var newCaption = '';
-var i = 0;
-
 //-----=[MODIFY THESE VARIABLES]=-----
 var targetElement = "#caption"; //The target element on the page where the content will be displayed and updated. MUST follow CSS syntax (# for ids, . for classes).
 var captions = ["Cycle 1", "Cycle 2", "Cycle 3"]; //Content array that will be typed to the screen.
@@ -11,6 +6,11 @@ var eraseSpeed = 50; //How fast each character is erased from the caption, in ms
 var typeSpeed = 100; //How fast each character is typed into the caption, in ms.
 var timeBetweenCycle = 750; //How long in between each new word cycle, in ms.
 var timeBetweenErase = 1500; //How long in between each erase cycle, in ms.
+
+//-----=[DO NOT TOUCH THESE VARIABLES]=-----
+var captionLength = 0;
+var newCaption = '';
+var i = 0;
 
 $(function () {
     setInterval('cursorAnimation()', cursorSpeed);
